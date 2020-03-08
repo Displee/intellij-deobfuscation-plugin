@@ -41,5 +41,7 @@ patchPluginXml {
         Added fix tests<br>
         <br>
         Updated to support 2019.1
+        <br>
+        Added experimental pointless do while & inline external else statements
       """
 }

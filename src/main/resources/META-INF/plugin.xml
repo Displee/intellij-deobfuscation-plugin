@@ -12,7 +12,7 @@
     <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
     -->
-    <idea-version since-build="184" until-build="191.*"/>
+    <idea-version since-build="191.*" until-build="193.*"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <localInspection groupPath="Java" language="JAVA" shortName="PointlessBitwiseComparator" bundle="world.gregs.intellij.plugins.DeobfuscateToolBundle"
@@ -35,6 +35,11 @@
                          groupKey="group.names.control.flow.issues" enabledByDefault="true" level="WARNING"
                          hasStaticDescription="true"
                          implementationClass="world.gregs.intellij.plugins.flow.PointlessDoWhileStatementInspection"/>
+        <localInspection groupPath="Java" language="JAVA" shortName="InlineExternalElseStatement" bundle="world.gregs.intellij.plugins.DeobfuscateToolBundle"
+                         key="inline.external.else.statement.display.name" groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.control.flow.issues" enabledByDefault="true" level="WARNING"
+                         hasStaticDescription="true"
+                         implementationClass="world.gregs.intellij.plugins.flow.InlineExternalElseStatementInspection"/>
     </extensions>
 
     <actions>
